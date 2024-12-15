@@ -1,4 +1,4 @@
-Ссылки на проект в Overleaf
+[Ссылки на проект в Overleaf] (https://www.overleaf.com/read/rmdhyfxshfrt#796a76) 
 # Geometric Library
 
 This Python code defines a library of functions for calculating the area and perimeter of various geometric shapes. It includes calculations for circles, rectangles, squares and triangles.
