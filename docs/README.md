@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Ссылки на проект в Overleaf] (https://www.overleaf.com/read/rmdhyfxshfrt#796a76) 
 # Geometric Library
 
@@ -126,3 +127,26 @@ Calculates the perimeter of a triangle.
 |1d86eb5cea14318ea7b3d0c561ff07c0bc6845d8 new file has been added
 d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+=======
+
+# How to use calculator:
+1. Run `python calculate.py`
+2. Enter the figure name. Available are Circle, Square.
+3. Enter the function: Area or Perimeter.
+4. Enter figure sizes. Radius for circle, one side for square.
+5. Get the answer!
+
+# Math formulas
+## Area
+- Circle: `S = πR²`
+- Rectangle: `S = ab`
+- Square: `S = a²`
+- Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
+
+## Perimeter
+- Circle: `P = 2πR`
+- Rectangle: `P = 2a + 2b`
+- Square: `P = 4a`
+- Triangle: `P = a + b + c`
+
+>>>>>>> b5b0fae727ca72c317c383b39c0af73d6adcd81c
