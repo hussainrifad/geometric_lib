@@ -41,15 +41,15 @@ def calc(shape, *args):
         return {"area": area_circle(r), "perimeter": perimeter_circle(r)}
     elif shape == "square":
         if len(args) != 1:
-            raise ValueError("должен иметь только один аргумент (сторону)")
+            raise ValueError("только один аргумент (сторону)")
         a = args[0]
         return {"area": area_square(a), "perimeter": perimeter_square(a)}
     elif shape == "triangle":
         if len(args) != 3:
-            raise ValueError("должен иметь три аргумента (стороны)")
+            raise ValueError("три аргумента (стороны)")
         a, b, c = args
         if a + b <= c or a + c <= b or b + c <= a:
-            raise ValueError("треугольника должна быть больше третьей")
+            raise ValueError("должна быть больше третьей")
         return {"area": area_triangle(a, b, c), "perimeter": perimeter_triangle(a, b, c)}
     else:
         raise ValueError(f"Неизвестная фигура: {shape}")
