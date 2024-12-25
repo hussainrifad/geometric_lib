@@ -15,18 +15,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    steps:
-    - name: Hussain Rifad
-      uses: actions/hussainrifad
+    env:
+      NAME: Hussain Rifad
+      GROUP: M3113
 
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Print user info
       run: |
         echo "ФИО: Hussain Rifad"
         echo "Номер группы: 3114"
-        echo "GitHub Nickname: $GITHUB_ACTOR"
+        echo "GitHub Nickname: GitHub"
 
     - name: Set up Python 3.13
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.13'
 
