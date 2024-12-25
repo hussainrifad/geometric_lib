@@ -22,13 +22,11 @@ def perimeter_square(a):
 
 
 def area_triangle(a, b, c):
-    """треугольника по формуле Герона"""
     s = (a + b + c) / 2
     return math.sqrt(s * (s - a) * (s - b) * (s - c))
 
 
 def perimeter_triangle(a, b, c):
-    """периметра треугольника"""
     return a + b + c
 
 
@@ -50,6 +48,6 @@ def calc(shape, *args):
         a, b, c = args
         if a + b <= c or a + c <= b or b + c <= a:
             raise ValueError("должна быть больше третьей")
-        return {"area": area_triangle(a, b, c), "perimeter": perimeter_triangle(a, b, c)}
+        return {area_triangle(a, b, c), perimeter_triangle(a, b, c)}
     else:
         raise ValueError(f"Неизвестная фигура: {shape}")
