@@ -50,6 +50,6 @@ def calc(shape, *args):
         a, b, c = args
         if a + b <= c or a + c <= b or b + c <= a:
             raise ValueError("должна быть больше третьей")
-        return {area_triangle(a, b, c), perimeter_triangle(a, b, c)}
+        return {"area": area_triangle(a, b, c), "perimeter": perimeter_triangle(a, b, c)}
     else:
         raise ValueError(f"Неизвестная фигура: {shape}")
