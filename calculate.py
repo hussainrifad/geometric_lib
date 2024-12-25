@@ -22,11 +22,13 @@ def perimeter_square(a):
 
 
 def area_triangle(a, b, c):
+    """площади"""
     s = (a + b + c) / 2
     return math.sqrt(s * (s - a) * (s - b) * (s - c))
 
 
 def perimeter_triangle(a, b, c):
+    """треугольника"""
     return a + b + c
 
 
